@@ -78,6 +78,36 @@
          result="composite2"
          id="feComposite7613" />
     </filter>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-6"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path7713-2"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-6-1"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path7713-2-2"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6)" />
+    </marker>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -87,10 +117,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="4"
-     inkscape:cx="147.65495"
+     inkscape:cx="94.65495"
      inkscape:cy="112.33706"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
@@ -106,7 +136,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -120,7 +150,7 @@
        id="rect7532"
        width="72.216225"
        height="44.433559"
-       x="5.051394"
+       x="5.238483"
        y="247.14087" />
     <text
        xml:space="preserve"
@@ -146,63 +176,127 @@
          y="6.1575513"
          style="fill:#0c4d0d;fill-opacity:1;stroke-width:0.07016313">Cost including Maintenance</tspan></text>
     <path
-       style="fill:none;stroke:#ffffff;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#Arrow2Mend)"
-       d="m 60.721874,260.68594 c -1.197519,2.14192 -5.778895,1.65814 -5.820833,1.65365"
+       style="fill:none;stroke:#ffffff;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
+       d="m 60.060416,267.0125 c -1.197519,-2.14192 -5.778895,-1.65814 -5.820833,-1.65365"
        id="path7684"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend-6)"
+       d="m 22.888433,260.96434 c 2.453676,-0.0367 4.330264,4.17059 4.34739,4.20914"
+       id="path7684-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend-6-1)"
+       d="m 16.802429,280.82915 c -0.283613,-2.43751 3.713304,-4.72825 3.749933,-4.74917"
+       id="path7684-9-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="savings">
+    <path
+       style="fill:#568b52;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 53.247395,19.976041 56.554687,9.6572915 h 6.945312 v 9.3265625 z"
+       id="path1564"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Text">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.22131395px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#fbc069;fill-opacity:1;stroke:none;stroke-width:0.08053285"
+       x="6.1331296"
+       y="39.18713"
+       id="text7640-2"><tspan
+         sodipodi:role="line"
+         id="tspan7638-9"
+         x="6.1331296"
+         y="39.18713"
+         style="fill:#fbc069;fill-opacity:1;stroke-width:0.08053285">Traditional Landscape</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.22131395px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#53c15b;fill-opacity:1;stroke:none;stroke-width:0.08053285"
+       x="6.701571"
+       y="17.822186"
+       id="text7640"><tspan
+         sodipodi:role="line"
+         id="tspan7638"
+         x="6.701571"
+         y="17.822186"
+         style="fill:#53c15b;fill-opacity:1;stroke-width:0.08053285">Xeriscape</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.22131395px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ff8e61;fill-opacity:1;stroke:none;stroke-width:0.08053285"
+       x="53.625839"
+       y="26.024109"
+       id="text7640-9"><tspan
+         sodipodi:role="line"
+         id="tspan7638-6"
+         x="53.625839"
+         y="26.024109"
+         style="fill:#ff8e61;fill-opacity:1;stroke-width:0.08053285">Drought</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.22131395px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ff8e61;fill-opacity:1;stroke:none;stroke-width:0.08053285"
+       x="53.521221"
+       y="29.529839"
+       id="text7640-9-3"><tspan
+         sodipodi:role="line"
+         id="tspan7638-6-6"
+         x="53.521221"
+         y="29.529839"
+         style="fill:#ff8e61;fill-opacity:1;stroke-width:0.08053285">Event</tspan><tspan
+         sodipodi:role="line"
+         x="53.521221"
+         y="33.55648"
+         style="fill:#ff8e61;fill-opacity:1;stroke-width:0.08053285"
+         id="tspan978" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.22131395px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.08053285"
+       x="55.37331"
+       y="17.028276"
+       id="text7640-9-7"><tspan
+         sodipodi:role="line"
+         id="tspan7638-6-5"
+         x="55.37331"
+         y="17.028276"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.08053285">Savings</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.22131395px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#444444;fill-opacity:1;stroke:none;stroke-width:0.08053285;"
+       x="6.2654214"
+       y="6.6433806"
+       id="text7640-3"><tspan
+         sodipodi:role="line"
+         id="tspan7638-5"
+         x="6.2654214"
+         y="6.6433806"
+         style="fill:#444444;fill-opacity:1;stroke-width:0.08053285;">A Better Investment over Time</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="lines">
     <path
-       style="fill:none;stroke:#f0bb69;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       style="fill:none;fill-opacity:1;stroke:#f0bb69;stroke-width:0.66500002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 5.3578124,34.594271 52.850521,21.298958 56.554687,9.6572916"
        id="path7634"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccc" />
     <path
-       style="fill:none;stroke:#53c15b;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:none;stroke:#53c15b;stroke-width:0.565;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 5.2255208,24.407812 70.31302,18.388541"
        id="path7636"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
-    <text
-       transform="translate(0,-244.08334)"
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.22131395px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.08053285;"
-       x="27.630526"
-       y="275.79599"
-       id="text7640-2"><tspan
-         sodipodi:role="line"
-         id="tspan7638-9"
-         x="27.630526"
-         y="275.79599"
-         style="stroke-width:0.08053285;fill:#ffffff;fill-opacity:1;">Traditional Landscape</tspan></text>
-    <text
-       transform="translate(0,-244.08334)"
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.22131395px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.08053285;"
-       x="6.7677169"
-       y="265.41125"
-       id="text7640"><tspan
-         sodipodi:role="line"
-         id="tspan7638"
-         x="6.7677169"
-         y="265.41125"
-         style="stroke-width:0.08053285;fill:#ffffff;fill-opacity:1;">Xeriscape</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.22131395px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.08053285"
-       x="56.139381"
-       y="16.036089"
-       id="text7640-9"><tspan
-         sodipodi:role="line"
-         id="tspan7638-6"
-         x="56.139381"
-         y="16.036089"
-         style="fill:#ffffff;fill-opacity:1;stroke-width:0.08053285">Drought</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"

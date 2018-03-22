@@ -53,7 +53,31 @@
             box-shadow:         inset  0  8px 8px -8px #000000,
                                 inset  0 -8px 8px -8px #000000;
         }
+        form th {
+            text-align: right;
+            padding-right: 1em;
+        }
+        input.error {
+            border-color: red;
+        }
     </style>
+    <script>
+        const inputs = document.querySelectorAll("input, select, textarea");
+
+        inputs.forEach(input => {
+            input.addEventListener(
+                "invalid",
+                event => {
+                    input.classList.add("error");
+                },
+                false
+            );
+        });
+
+        input.addEventListener("blur", function() {
+            input.checkValidity();
+        });
+    </script>
 </head>
 <body>
 <div class="parallax inset-top-bottom-shadow" style = "background-image: url('img/cactus.jpg'); height: 400px"></div>
@@ -160,21 +184,23 @@
     <div class="left">
         <h1>Contact us for More Information</h1>
         <form name="contact" method="POST" netlify>
-            <p>
-                <label>Your Name: <input type="text" name="name"></label>
-            </p>
-            <p>
-                <label>Phone: <input type="text" name="phone"></label>
-            </p>
-            <p>
-                <label>Your Email: <input type="email" name="email"></label>
-            </p>
-            <p>
-                <label>Message: <textarea name="message"></textarea></label>
-            </p>
-            <p>
-                <button type="submit">Send</button>
-            </p>
+            <table>
+                <tr>
+                    <label><th>Your Name:</th><td><input type="text" name="name" required></td></label>
+                </tr>
+                <tr>
+                    <label><th>Your Phone:</th><td><input type="text" name="name" regex="\d{3}[\-]\d{3}[\-]\d{4}" title="Phone number in the form xxx-xxx-xxxx"></td></label>
+                </tr>
+                <tr>
+                    <label><th>Your Email:</th><td><input type="email" name="name" required title="Please enter a valid email"></td></label>
+                </tr>
+                <tr>
+                    <label><th>Message:</th><td><input type="text" name="name"></td></label>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit">Send</button></td>
+                </tr>
+            </table>
         </form>
     </div>
 </section>
