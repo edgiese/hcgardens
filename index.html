@@ -17,7 +17,7 @@
         body {
             padding: 0; margin: 0;
         }
-        h1 {
+        h2 {
             font-family: "Oswald", sans-serif;
             font-size: 16pt;
             color: #0c4d0d;
@@ -60,30 +60,39 @@
         input.error {
             border-color: red;
         }
+        div.sticky {
+            position: fixed;
+            top: 1em;
+            left: -142px;
+            width: 140px;
+            background-color: white;
+            border: 2px solid #444;
+            border-left: none;
+            border-radius: 0 0.5em 0.5em 0;
+            transition: 0.3s all;
+        }
+        div.sticky a {
+            display: block;
+            padding: 1em;
+            font-family: "Oswald", "sans-serif";
+            text-decoration: none;
+            color: #0c4d0d;
+            font-weight: bold;
+            font-size: larger;
+        }
+        div.sticky.showing {
+            left: 0;
+        }
     </style>
-    <script>
-        const inputs = document.querySelectorAll("input, select, textarea");
-
-        inputs.forEach(input => {
-            input.addEventListener(
-                "invalid",
-                event => {
-                    input.classList.add("error");
-                },
-                false
-            );
-        });
-
-        input.addEventListener("blur", function() {
-            input.checkValidity();
-        });
-    </script>
 </head>
 <body>
+<div class="sticky">
+    <a href="#contactus">Contact Us</a>
+</div>
 <div class="parallax inset-top-bottom-shadow" style = "background-image: url('img/cactus.jpg'); height: 400px"></div>
 <section>
     <div class="left">
-        <h1>Why Hill Country Gardens?</h1>
+        <h2 id="why">Why Hill Country Gardens?</h2>
         <p>A well designed landscape maximizes the beauty and enjoyment of the property while it provides for the necessary and desirable functions;  all tailored to the needs/tastes of the client.   In today’s home/business turnover resale value of a property that is landscaped well is enhanced.    A quality landscape looks finished.   Decisions for function and utility have been made in an attractive and appealing way that makes an impression and/or statement to the people experiencing it or about the people owning it. A well designed and implemented landscape reduces maintenance costs; making a home less costly to use and a business more profitable to operate.   </p>
         <p>At Hill Country Gardens, we value <strong><em>service</em></strong>.  We love beautifying the outdoors, and we want to be just a little more than simply "contractors" to our customers, we want to feel a little like partners.  This feeling starts with the estimates that we make.  We don't settle for "quotes" that lead to bickering as the job progresses, but we plan together with our customers to make a plan that can change as things come together.</p>
         <div class="subsection">
@@ -99,7 +108,7 @@
 <div class="parallax inset-top-bottom-shadow" style = "background-image: url('img/landscape1.jpg')"></div>
 <section>
     <div class="left">
-        <h1>Xeriscaping is Our Specialty</h1>
+        <h2>Xeriscaping is Our Specialty</h2>
         <p>While we do all sorts of exterior landscaping work, our specialty is xeriscaping.  This word, which sounds like "zero-scaping," Comes from the Greek word for "dry".  The Hill Country is technically a semi-arid area, and we regularly have multi-year droughts or dry spells.  Many landscaping choices that work well further East in Texas fail here, or require a lot of irrigation to keep them working.</p>
         <p>Governments and communities are growing more and more conscious of water usage, and irrigation water may, at some time in the future, be unavailable at any price.  Or, it might grow so expensive that it is cheaper to start over with landscaping than to keep the current plants alive.</p>
         <p>The concepts of Xeriscaping involve using native plants which have adapted to the local climate.  Many of them can go dormant or stay alive with very little watering when droughts come.  And, when they are arranged properly, a design can provide visual interest all year round, by having plants which flourish in the widely different conditions that occur throughout the year here.</p>
@@ -109,7 +118,7 @@
 <div class="parallax inset-top-bottom-shadow" style = "background-image: url('img/landscape2.jpg')"></div>
 <section>
     <div class="left">
-        <h1>Landscaping is an Investment</h1>
+        <h2>Landscaping is an Investment</h2>
         <p>If you don't think about landscaping most of the time (and most people don't), you might fall into the trap of looking at landscaping as an expense along the way to finishing a project, such as a house or a new business.  Like the house itself, though, landscaping reflects decisions that will be with you, hopefully for years.  What's more, no outdoor landscape will look good without care and maintenance, and giving thought to how much time and money you want to spend is worth it up front.</p>
         <p>Although we don't do maintenance (mowing, etc.) work any longer, for years we did.  So we understand very well how a good job up front can improve the expense of and difficulty of maintenance.  We strive for work that will look the best with relatively less paid in ongoing maintenance, both watering and trimming.</p>
         <p class="float-right"><img class="chart" src="img/chart1.svg" /></p>
@@ -121,7 +130,7 @@
 <div class="parallax inset-top-bottom-shadow" style = "background-image: url('img/landscape3.jpg')"></div>
 <section>
     <div class="left">
-        <h1>Estimates, not Quotes</h1>
+        <h2>Estimates, not Quotes</h2>
         <p>We don't normally do "quotes".  A quote is a fixed bid:  a promise to do a job for an exact amount of money.  It is very common in business, but unless your legal situation requires it (and let us know if it does), then we will give you an estimate instead.</p>
         <p>An estimate has a price on it, but the price can change.  A quote has a price that will only be changed if renegotiation occurs.</p>
         <p>An estimate reflects the bidder's best prediction of what the cost will be.  A quote almost always has "padding" in it to protect the bidder.  If things go well, the bidder pockets the difference.</p>
@@ -133,7 +142,7 @@
 <div class="parallax inset-top-bottom-shadow" style = "background-image: url('img/blueprint1.jpg')"></div>
 <section>
     <div class="left">
-        <h1>What to Expect if you Contact Us</h1>
+        <h2>What to Expect if you Contact Us</h2>
         <p>If you are reading this, you are probably thinking about having some landscaping done in the Fredericksburg area.  If you are, we hope you will contact us.  Use the website or Facebook to get our contact information and let us know how we can help!</p>
         <p>If you do contact us, we will talk to you about your requirements.  If appropriate, we will put together an estimate (not a quote) of the work we can do for you.  It should help a lot in figuring out what could work, and how much it will cost.  If necessary, we will work with you to make adjustments.  Then, when you are ready, we will schedule the work.</p>
         <p>The scheduling depends on our team availability.  We do our best to operate on a "first-come, first-served" basis, but we can make exceptions in exceptional cases.  We will give you, as with the estimate, our best thoughts about when work will start and complete.  If the job is large, we will discuss payment schedules as part of this.  In the landscaping business, we are often hostage to the weather, so a firm schedule is hard to achieve.  But in line with our commitment to service, we will do our best to keep you informed.</p>
@@ -143,7 +152,7 @@
 <div class="parallax inset-top-bottom-shadow" style = "background-image: url('img/landscape4.jpg')"></div>
 <section>
     <div class="left">
-        <h1>10 Things You Should Know About Us</h1>
+        <h2>10 Things You Should Know About Us</h2>
         <ol>
             <li>
                 <p>Jeff, our founder, grew up in Fredericksburg and lived here nearly all his life</p>
@@ -182,7 +191,7 @@
 <div class="parallax inset-top-bottom-shadow" style = "background-image: url('img/landscape5.jpg')"></div>
 <section>
     <div class="left">
-        <h1>Contact us for More Information</h1>
+        <h2 id="contactus">Contact us for More Information</h2>
         <form name="contact" method="POST" netlify>
             <table>
                 <tr>
@@ -204,4 +213,37 @@
         </form>
     </div>
 </section>
+<script>
+
+    const inputs = document.querySelectorAll("input, select, textarea");
+
+    inputs.forEach(input => {
+        input.addEventListener(
+            "invalid",
+            event => {
+                 input.classList.add("error");
+            },
+            false
+        );
+
+        input.addEventListener("blur", function() {
+            input.classList.remove("error");
+            input.checkValidity();
+        });
+    });
+
+
+    window.addEventListener('scroll', function(e) {
+        var scrollY = window.scrollY;
+        var labelpos = $('#contactus').position();
+        var bottomLimit = labelpos.top - window.outerHeight;
+        var startLabelpos = $('#why').position();
+        var topLimit = startLabelpos.top;
+        if (scrollY > topLimit && scrollY < bottomLimit) {
+            $('.sticky').addClass("showing");
+        } else {
+            $('.sticky').removeClass("showing");
+        }
+    });
+</script>
 </body>
