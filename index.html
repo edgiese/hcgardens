@@ -222,13 +222,13 @@
                     <label><th>Your Name:</th><td><input type="text" name="name" required></td></label>
                 </tr>
                 <tr>
-                    <label><th>Your Phone:</th><td><input type="text" name="name" regex="\d{3}[\-]\d{3}[\-]\d{4}" title="Phone number in the form xxx-xxx-xxxx"></td></label>
+                    <label><th>Your Phone:</th><td><input type="text" name="phone" regex="\d{3}[\-]\d{3}[\-]\d{4}" title="Phone number in the form xxx-xxx-xxxx"></td></label>
                 </tr>
                 <tr>
-                    <label><th>Your Email:</th><td><input type="email" name="name" required title="Please enter a valid email"></td></label>
+                    <label><th>Your Email:</th><td><input type="email" name="email" required title="Please enter a valid email"></td></label>
                 </tr>
                 <tr>
-                    <label><th>Message:</th><td><input type="text" name="name"></td></label>
+                    <label><th>Message:</th><td><input type="text" name="message"></td></label>
                 </tr>
                 <tr>
                     <td colspan="2"><button type="submit">Send</button></td>
@@ -239,35 +239,74 @@
 </section>
 <script>
 
-    const inputs = document.querySelectorAll("input, select, textarea");
+const inputs = document.querySelectorAll("input, select, textarea");
 
-    inputs.forEach(input => {
-        input.addEventListener(
+inputs.forEach(input => {
+    input.addEventListener(
             "invalid",
             event => {
-                 input.classList.add("error");
+                input.classList.add("error");
             },
             false
-        );
+            );
 
-        input.addEventListener("blur", function() {
-            input.classList.remove("error");
-            input.checkValidity();
-        });
+    input.addEventListener("blur", function() {
+        input.classList.remove("error");
+        input.checkValidity();
     });
+});
 
+document.querySelector('#contactus').addEventListener('focus', function(e) {
+    $('[name="name"]').focus();
+});
 
-    window.addEventListener('scroll', function(e) {
-        var scrollY = window.scrollY;
-        var labelpos = $('#contactus').position();
-        var bottomLimit = labelpos.top - window.outerHeight;
-        var startLabelpos = $('#why').position();
-        var topLimit = startLabelpos.top;
-        if (scrollY > topLimit && scrollY < bottomLimit) {
-            $('.sticky').addClass("showing");
-        } else {
-            $('.sticky').removeClass("showing");
+window.addEventListener('scroll', function(e) {
+    var scrollY = window.scrollY;
+    var labelpos = $('#contactus').position();
+    var bottomLimit = labelpos.top - window.outerHeight;
+    var startLabelpos = $('#why').position();
+    var topLimit = startLabelpos.top;
+    if (scrollY > topLimit && scrollY < bottomLimit) {
+        $('.sticky').addClass("showing");
+    } else {
+        $('.sticky').removeClass("showing");
+    }
+});
+// Select all links with hashes
+$('a[href*="#"]')
+// Remove links that don't actually link to anything
+.not('[href="#"]')
+.not('[href="#0"]')
+.click(function(event) {
+    // On-page links
+    if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+            && 
+            location.hostname == this.hostname
+       ) {
+        // Figure out element to scroll to
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        // Does a scroll target exist?
+        if (target.length) {
+            // Only prevent default if animation is actually gonna happen
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 800, function() {
+                // Callback after animation
+                // Must change focus!
+                var $target = $(target);
+                $target.focus();
+                if ($target.is(":focus")) { // Checking if the target was focused
+                    return false;
+                } else {
+                    $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                    $target.focus(); // Set focus again
+                };
+            });
         }
-    });
+    }
+});
 </script>
 </body>
